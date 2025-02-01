@@ -1,9 +1,11 @@
+/* Reset default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set the body background, font, and text color */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -11,12 +13,14 @@ body {
   color: #333;
 }
 
+/* Style for the header (navigation bar background and padding) */
 header {
   background: #333;
   color: #fff;
   padding: 1rem 0;
 }
 
+/* Navigation container for logo and menu items */
 nav {
   display: flex;
   align-items: center;
@@ -26,26 +30,31 @@ nav {
   padding: 0 20px;
 }
 
+/* Logo styling */
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
+/* Navigation list styling: display links horizontally */
 nav ul {
   list-style: none;
   display: flex;
 }
 
+/* Spacing between navigation items */
 nav ul li {
   margin-left: 20px;
 }
 
+/* Styling for navigation links */
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
 
+/* Section styling for all content sections */
 .section {
   padding: 2rem 20px;
   max-width: 1000px;
@@ -55,6 +64,7 @@ nav ul li a {
   border-radius: 5px;
 }
 
+/* Footer styling: center text and set background */
 footer {
   text-align: center;
   padding: 1rem;
