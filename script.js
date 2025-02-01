@@ -1,25 +1,27 @@
-// This is a placeholder for fetching your server's real-time status.
-// Replace the URL and parsing logic with your actual server API details.
+// Wait until the DOM content is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', function() {
+  // Get the div where the server status will be displayed
   const statusDiv = document.getElementById('server-status');
 
-  // Example function to simulate a server status check
+  // Function to simulate a server status check
   function checkServerStatus() {
-    // Replace this timeout with a real fetch call to your server's API
+    // Use setTimeout to mimic an API call delay
     setTimeout(() => {
-      // Sample status data (you would get this from your server)
+      // Sample data: Replace this with a real API call to your FiveM server
       const serverData = {
         online: true,
         players: 12,
         maxPlayers: 64
       };
 
+      // Update the inner HTML of the server status div with live data
       statusDiv.innerHTML = `
         <p>Status: <strong>${serverData.online ? 'Online' : 'Offline'}</strong></p>
         <p>Players: ${serverData.players} / ${serverData.maxPlayers}</p>
       `;
-    }, 1000);
+    }, 1000); // Delay of 1 second
   }
 
+  // Call the function to check server status when the page loads
   checkServerStatus();
 });
